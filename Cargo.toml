@@ -1,0 +1,12 @@
+[package]
+name = "trve_bevy"
+version = "0.1.0"
+edition = "2024"
+description = "A collection of opinionated plugins and tools for making Bevy games."
+keywords = ["gamedev", "bevy"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/TrveSoft/trve_bevy"
+rust-version = "1.92.0"
+
+[workspace]
+resolver = "2"
