@@ -10,3 +10,4 @@ rust-version = "1.92.0"
 
 [workspace]
 resolver = "2"
+members = ["crates/*"]
