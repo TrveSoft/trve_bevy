@@ -18,3 +18,4 @@ bevy_time = { version = "0.18.1", default-features = false }
 
 [workspace]
 resolver = "2"
+members = ["crates/*"]
