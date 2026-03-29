@@ -11,9 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- *(localization)* Add LocalizationPlugin
+- _(components)_ Add `EntityTimer` and `GlobalTimer`
+- _(localization)_ Add LocalizationPlugin
 
 ### Other
 
 - Add release-plz configuration
-- Initial commit
