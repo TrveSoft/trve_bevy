@@ -1,6 +1,6 @@
 [package]
 name = "trve_bevy"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A collection of opinionated plugins and tools for making Bevy games."
 keywords = ["gamedev", "bevy"]
