@@ -1,10 +1,10 @@
 use bevy_app::{App, Plugin, Startup, Update};
 use bevy_asset::{AssetServer, Assets, LoadedFolder};
-use bevy_ecs::schedule::{IntoScheduleConfigs, SystemCondition};
-use bevy_ecs::system::{Commands, Res, ResMut};
 use bevy_ecs::{
     message::MessageWriter,
     schedule::common_conditions::{not, on_message},
+    schedule::{IntoScheduleConfigs, SystemCondition},
+    system::{Commands, Res, ResMut},
 };
 use bevy_fluent::LocalizationBuilder;
 

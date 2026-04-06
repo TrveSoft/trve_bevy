@@ -1,15 +1,18 @@
 use bevy_app::{App, Plugin, Startup, Update};
-use bevy_ecs::schedule::{IntoScheduleConfigs, SystemCondition};
-use bevy_ecs::system::{Commands, Res, ResMut};
 use bevy_ecs::{
     message::MessageWriter,
-    schedule::common_conditions::{resource_exists, resource_exists_and_changed},
+    schedule::{
+        common_conditions::{resource_exists, resource_exists_and_changed},
+        {IntoScheduleConfigs, SystemCondition},
+    },
+    system::{Commands, Res, ResMut},
 };
 use bevy_fluent::prelude::*;
 
 use crate::{
     DEFAULT_LANG_ID,
     loading::LocalizationAssetLoadingPlugin,
+    localized_text::LocalizedTextPlugin,
     prelude::{DefaultLocale, LocaleChanged, SupportedLocales},
     resources::LocalizationFolderHandle,
 };
@@ -18,7 +21,11 @@ pub struct LocalizationPlugin;
 
 impl Plugin for LocalizationPlugin {
     fn build(&self, app: &mut App) {
-        app.add_plugins((LocalizationAssetLoadingPlugin, FluentPlugin));
+        app.add_plugins((
+            LocalizationAssetLoadingPlugin,
+            FluentPlugin,
+            LocalizedTextPlugin,
+        ));
 
         app.add_message::<LocaleChanged>();
 

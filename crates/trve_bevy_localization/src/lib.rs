@@ -1,6 +1,7 @@
 mod events;
 mod loading;
 mod localization_manager;
+mod localized_text;
 mod plugin;
 mod resources;
 mod run_conditions;
@@ -14,6 +15,7 @@ pub mod prelude {
 
     pub use events::LocaleChanged;
     pub use localization_manager::LocalizationManager;
+    pub use localized_text::LocalizedText;
     pub use plugin::LocalizationPlugin;
     pub use resources::{
         DefaultLocale, LocalizationAssetFolder, LocalizationAssetsLoadState, SupportedLocales,
