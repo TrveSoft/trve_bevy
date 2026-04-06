@@ -34,6 +34,10 @@ impl LocalizationManager<'_> {
         }
     }
 
+    pub fn current_locale_string(&self) -> String {
+        self.locale.requested.to_string()
+    }
+
     pub fn locale(&self) -> &Locale {
         &self.locale
     }
