@@ -34,6 +34,7 @@ impl LocalizationManager<'_> {
         }
     }
 
+    /// Returns the current [`Locale`] as a [`String`] (e.g. "en-US").
     pub fn current_locale_string(&self) -> String {
         self.locale.requested.to_string()
     }

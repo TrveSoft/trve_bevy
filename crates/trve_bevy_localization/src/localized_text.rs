@@ -32,6 +32,8 @@ impl Plugin for LocalizedTextPlugin {
     }
 }
 
+/// Localizes UI text by synchronizing a [`fluent_content::Request`]
+/// message and a bevy [`Text`] component.
 #[derive(Component)]
 #[component(on_remove = on_remove_localized_text)]
 #[require(Text)]
