@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy-v0.1.1...trve_bevy-v0.2.0) - 2026-06-20
+
+### Other
+
+- *(trve_bevy)* [**breaking**] Update bevy to 0.19
+- [**breaking**] Update rust-version to 1.95.0
+
 ## [0.1.1](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy-v0.1.0...trve_bevy-v0.1.1) - 2026-04-06
 
 ### Added
