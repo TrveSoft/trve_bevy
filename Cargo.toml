@@ -7,6 +7,15 @@ keywords = ["gamedev", "bevy"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/TrveSoft/trve_bevy"
 rust-version = "1.95.0"
+include = [
+    "src/**",
+    "Cargo.toml",
+    "CHANGELOG.md",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "NOTICE",
+    "README.md",
+]
 
 [features]
 bevy_reflect = ["bevy_ecs/bevy_reflect", "bevy_time/bevy_reflect"]
