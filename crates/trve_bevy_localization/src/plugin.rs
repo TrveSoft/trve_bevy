@@ -36,8 +36,9 @@ impl Plugin for LocalizationPlugin {
 
         app.add_systems(
             Update,
-            on_locale_changed
-                .run_if(resource_exists::<Localization>.and(resource_exists_and_changed::<Locale>)),
+            on_locale_changed.run_if(
+                resource_exists::<Localization>.and_then(resource_exists_and_changed::<Locale>),
+            ),
         );
     }
 }

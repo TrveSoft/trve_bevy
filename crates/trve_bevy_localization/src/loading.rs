@@ -29,7 +29,8 @@ impl Plugin for LocalizationAssetLoadingPlugin {
             Update,
             (
                 update_assets_load_state.run_if(
-                    not(localization_assets_loaded).and(not(localization_assets_loading_failed)),
+                    not(localization_assets_loaded)
+                        .and_then(not(localization_assets_loading_failed)),
                 ),
                 init_localization_resource.run_if(on_message::<LocalizationAssetsFinishedLoading>),
             )
