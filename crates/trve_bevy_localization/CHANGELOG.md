@@ -11,22 +11,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- *(trve_bevy_localization)* [**breaking**] Update to bevy 0.19
+- _(trve_bevy_localization)_ [**breaking**] Update to bevy 0.19
 
 ### Other
 
-- Adds trve_bevy_time crate
-- *(trve_bevy_localization)* Add README.md
+- _(trve_bevy_localization)_ Add README.md
 
 ## [0.1.1](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_localization-v0.1.0...trve_bevy_localization-v0.1.1) - 2026-04-06
 
 ### Added
 
-- *(localization)* Add LocalizationManager::current_locale_string()
-- *(localization)* Add LocalizedText
+- _(localization)_ Add LocalizationManager::current_locale_string()
+- _(localization)_ Add LocalizedText
 
 ## [0.1.0](https://github.com/TrveSoft/trve_bevy/releases/tag/trve_bevy_localization-v0.1.0) - 2026-03-26
 
 ### Added
 
-- *(localization)* Add LocalizationPlugin
+- _(localization)_ Add LocalizationPlugin
