@@ -3,7 +3,10 @@ name = "trve_bevy_localization"
 version = "0.1.1"
 edition = "2024"
 description = "Provides Localization features, leveraging `bevy_fluent`."
-license = "MIT OR Apache-2.0"
+keywords.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version = "1.95.0"
 
 [features]
 default = ["multi_threaded", "bevy_app/default", "bevy_ecs/default"]

@@ -2,29 +2,7 @@
 resolver = "2"
 members = ["crates/*"]
 
-[package]
-name = "trve_bevy"
-version = "0.2.0"
-edition = "2024"
-description = "A collection of opinionated plugins and tools for making Bevy games."
-keywords = ["gamedev", "bevy"]
+[workspace.package]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/TrveSoft/trve_bevy"
-rust-version = "1.95.0"
-include = [
-    "src/**",
-    "Cargo.toml",
-    "CHANGELOG.md",
-    "LICENSE-APACHE",
-    "LICENSE-MIT",
-    "NOTICE",
-    "README.md",
-]
-
-[features]
-bevy_reflect = ["bevy_ecs/bevy_reflect", "bevy_time/bevy_reflect"]
-
-[dependencies]
-bevy_derive = { version = "0.19", default-features = false }
-bevy_ecs = { version = "0.19", default-features = false }
-bevy_time = { version = "0.19", default-features = false }
+keywords = ["gamedev", "bevy"]
