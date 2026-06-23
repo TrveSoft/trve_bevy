@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_localization-v0.1.1...trve_bevy_localization-v0.2.0) - 2026-06-23
+
+### Added
+
+- *(trve_bevy_localization)* [**breaking**] Update to bevy 0.19
+
+### Other
+
+- Adds trve_bevy_time crate
+- *(trve_bevy_localization)* Add README.md
+
 ## [0.1.1](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_localization-v0.1.0...trve_bevy_localization-v0.1.1) - 2026-04-06
 
 ### Added

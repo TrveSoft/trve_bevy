@@ -10,4 +10,5 @@ TODO
 
 | `bevy` Version | `trve_bevy_localization` Version |
 | -------------- | -------------------------------- |
+| 0.19           | 0.2                              |
 | 0.18           | 0.1                              |
