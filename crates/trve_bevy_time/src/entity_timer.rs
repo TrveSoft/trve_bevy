@@ -11,7 +11,7 @@ use bevy_time::{Time, Timer, TimerMode};
 /// A generic [`Component`] wrapping a [`Timer`].
 /// This allows multiple timers to be attached to
 /// the same entity.
-#[derive(Component, Default, Deref, DerefMut)]
+#[derive(Component, Default, Clone, Deref, DerefMut)]
 pub struct EntityTimer<T: Send + Sync + 'static> {
     #[deref]
     timer: Timer,
