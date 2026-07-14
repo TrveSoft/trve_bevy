@@ -10,4 +10,4 @@ Use `EntityTimer<T>` as a component when spawning your entities or `GlobalTimer<
 
 | `bevy` Version | `trve_bevy_time` Version |
 | -------------- | ------------------------ |
-| 0.19           | 0.1                      |
+| 0.19           | 0.1, 0.2                 |
