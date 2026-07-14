@@ -6,9 +6,7 @@ mod plugin;
 mod resources;
 mod run_conditions;
 
-use unic_langid::{LanguageIdentifier, langid};
-
-const DEFAULT_LANG_ID: LanguageIdentifier = langid!("en-US");
+const DEFAULT_LANG_ID: unic_langid::LanguageIdentifier = unic_langid::langid!("en-US");
 
 pub mod prelude {
     use super::*;
