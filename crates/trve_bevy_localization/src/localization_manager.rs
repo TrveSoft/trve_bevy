@@ -23,7 +23,7 @@ impl LocalizationManager<'_> {
         match &self.localization {
             Some(localization) => localization.content(request).unwrap_or_else(|| {
                 bevy_log::warn!(
-                    "Unable to retrieve the requested localized content. Returning an empty String."
+                    "Unable to retrieve the requested localized content: {}. Returning an empty String.", request.into()
                 );
                 String::default()
             }),
