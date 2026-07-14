@@ -9,20 +9,9 @@ keywords.workspace = true
 rust-version = "1.95.0"
 
 [features]
-default = ["multi_threaded", "bevy_app/default", "bevy_ecs/default"]
+default = ["std"]
 
-asset_processor = ["bevy_asset/asset_processor"]
-bevy_reflect = ["bevy_app/bevy_reflect", "bevy_ecs/bevy_reflect"]
-debug = ["bevy_app/bevy_debug_stepping", "bevy_ecs/debug"]
-file_watcher = ["bevy_asset/file_watcher"]
-multi_threaded = ["bevy_asset/multi_threaded", "bevy_ecs/multi_threaded"]
-trace = [
-    "bevy_app/trace",
-    "bevy_asset/trace",
-    "bevy_ecs/trace",
-    "bevy_log/trace",
-    "bevy_log/tracing-tracy",
-]
+std = ["bevy_reflect/std", "serde/std", "thiserror/std", "toml/std"]
 
 [dependencies]
 bevy_app = { version = "0.19", default-features = false }
@@ -31,17 +20,11 @@ bevy_derive = { version = "0.19", default-features = false }
 bevy_ecs = { version = "0.19", default-features = false }
 bevy_log = { version = "0.19", default-features = false }
 bevy_platform = { version = "0.19", default-features = false }
-bevy_reflect = { version = "0.19", default-features = false, features = [
-    "std",
-] }
-serde = { version = "1", default-features = false, features = [
-    "std",
-    "derive",
-] }
+bevy_reflect = { version = "0.19", default-features = false }
+serde = { version = "1", default-features = false, features = ["derive"] }
 strum = { version = "0.28", default-features = false, features = ["derive"] }
-thiserror = { version = "2", default-features = false, features = ["std"] }
+thiserror = { version = "2", default-features = false }
 toml = { version = "1", default-features = false, features = [
-    "std",
     "serde",
     "parse",
 ] }
