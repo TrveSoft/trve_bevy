@@ -20,7 +20,7 @@ pub mod prelude {
     pub use run_conditions::{
         localization_assets_loaded, localization_assets_loading, localization_assets_loading_failed,
     };
-    pub use text::{LocalizedText, LocalizedTextSpan};
+    pub use text::{LocalizedText, LocalizedText2d, LocalizedTextSpan};
 }
 
 pub use unic_langid;

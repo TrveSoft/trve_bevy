@@ -14,7 +14,7 @@ use crate::{
     loading::LocalizationAssetLoadingPlugin,
     prelude::{DefaultLocale, LocaleChanged, SupportedLocales},
     resources::LocalizationFolderHandle,
-    text::{LocalizedTextPlugin, LocalizedTextSpanPlugin},
+    text::{LocalizedText2dPlugin, LocalizedTextPlugin, LocalizedTextSpanPlugin},
 };
 
 pub struct LocalizationPlugin;
@@ -26,6 +26,7 @@ impl Plugin for LocalizationPlugin {
             FluentPlugin,
             LocalizedTextPlugin,
             LocalizedTextSpanPlugin,
+            LocalizedText2dPlugin,
         ));
 
         app.add_message::<LocaleChanged>();
