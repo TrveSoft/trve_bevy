@@ -1,10 +1,10 @@
 mod events;
 mod loading;
 mod localization_manager;
-mod localized_text;
 mod plugin;
 mod resources;
 mod run_conditions;
+mod text;
 
 const DEFAULT_LANG_ID: unic_langid::LanguageIdentifier = unic_langid::langid!("en-US");
 
@@ -13,7 +13,6 @@ pub mod prelude {
 
     pub use events::LocaleChanged;
     pub use localization_manager::LocalizationManager;
-    pub use localized_text::LocalizedText;
     pub use plugin::LocalizationPlugin;
     pub use resources::{
         DefaultLocale, LocalizationAssetFolder, LocalizationAssetsLoadState, SupportedLocales,
@@ -21,6 +20,7 @@ pub mod prelude {
     pub use run_conditions::{
         localization_assets_loaded, localization_assets_loading, localization_assets_loading_failed,
     };
+    pub use text::{LocalizedText, LocalizedTextSpan};
 }
 
 pub use unic_langid;

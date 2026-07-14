@@ -12,9 +12,9 @@ use bevy_fluent::prelude::*;
 use crate::{
     DEFAULT_LANG_ID,
     loading::LocalizationAssetLoadingPlugin,
-    localized_text::LocalizedTextPlugin,
     prelude::{DefaultLocale, LocaleChanged, SupportedLocales},
     resources::LocalizationFolderHandle,
+    text::{LocalizedTextPlugin, LocalizedTextSpanPlugin},
 };
 
 pub struct LocalizationPlugin;
@@ -25,6 +25,7 @@ impl Plugin for LocalizationPlugin {
             LocalizationAssetLoadingPlugin,
             FluentPlugin,
             LocalizedTextPlugin,
+            LocalizedTextSpanPlugin,
         ));
 
         app.add_message::<LocaleChanged>();

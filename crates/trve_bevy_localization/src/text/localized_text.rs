@@ -19,12 +19,13 @@ pub(crate) struct LocalizedTextPlugin;
 
 impl Plugin for LocalizedTextPlugin {
     fn build(&self, app: &mut App) {
+        type Filter = (With<LocalizedText>, Changed<LocalizedText>);
+
         app.add_systems(
             PostUpdate,
             (
                 update_localized_text::<()>.run_if(on_message::<LocaleChanged>),
-                update_localized_text::<(With<LocalizedText>, Changed<LocalizedText>)>
-                    .run_if(not(on_message::<LocaleChanged>)),
+                update_localized_text::<Filter>.run_if(not(on_message::<LocaleChanged>)),
             )
                 .chain(),
         );
