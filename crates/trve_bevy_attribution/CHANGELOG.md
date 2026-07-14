@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_attribution-v0.1.0...trve_bevy_attribution-v0.2.0) - 2026-07-14
+
+### Added
+
+- _(trve_bevy_attribution)_ [**breaking**] Reworked features
+
 ## [0.1.0](https://github.com/TrveSoft/trve_bevy/releases/tag/trve_bevy_attribution-v0.1.0) - 2026-07-06
 
 ### Added
