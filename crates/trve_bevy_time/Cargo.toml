@@ -8,9 +8,6 @@ license.workspace = true
 repository.workspace = true
 rust-version = "1.95.0"
 
-[features]
-bevy_reflect = ["bevy_ecs/bevy_reflect", "bevy_time/bevy_reflect"]
-
 [dependencies]
 bevy_derive = { version = "0.19", default-features = false }
 bevy_ecs = { version = "0.19", default-features = false }
