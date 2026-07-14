@@ -6,7 +6,7 @@ use bevy_ecs::{
     query::{Changed, QueryFilter, With},
     schedule::{
         IntoScheduleConfigs,
-        common_conditions::{not, on_message},
+        common_conditions::{any_with_component, not, on_message},
     },
     system::Query,
     world::DeferredWorld,
@@ -27,6 +27,7 @@ impl Plugin for LocalizedTextPlugin {
                 update_localized_text::<()>.run_if(on_message::<LocaleChanged>),
                 update_localized_text::<Filter>.run_if(not(on_message::<LocaleChanged>)),
             )
+                .run_if(any_with_component::<LocalizedText>)
                 .chain(),
         );
         app.add_observer(on_insert_localized_text);
