@@ -11,8 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- _(trve_bevy_localization)_ [**breaking**] Remove reflect feature
-- _(trve_bevy_localization)_ [**breaking**] Feature gate text components
+- _(crate)_ [**breaking**] Remove reflect feature
+- _(crate)_ [**breaking**] Feature gate text components
 - _(localization)_ Add Text2d support
 - _(localization)_ Run LocalizedText update systems only if component exists
 - _(localization)_ Add TextSpan support
@@ -36,11 +36,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- _(trve_bevy_localization)_ [**breaking**] Update to bevy 0.19
+- _(crate)_ [**breaking**] Update to bevy 0.19
 
 ### Other
 
-- _(trve_bevy_localization)_ Add README.md
+- Add README.md
 
 ## [0.1.1](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_localization-v0.1.0...trve_bevy_localization-v0.1.1) - 2026-04-06
 
