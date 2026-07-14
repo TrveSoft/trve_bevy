@@ -11,7 +11,6 @@ rust-version = "1.95.0"
 [features]
 default = ["text", "text_2d", "text_span"]
 
-reflect = ["bevy_app/bevy_reflect", "bevy_ecs/bevy_reflect"]
 text = ["dep:bevy_ui"]
 text_2d = ["dep:bevy_sprite"]
 text_span = ["dep:bevy_text"]
