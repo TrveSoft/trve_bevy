@@ -9,20 +9,12 @@ repository.workspace = true
 rust-version = "1.95.0"
 
 [features]
-default = ["multi_threaded", "bevy_app/default", "bevy_ecs/default"]
+default = ["text", "text_2d", "text_span"]
 
-asset_processor = ["bevy_asset/asset_processor"]
-bevy_reflect = ["bevy_app/bevy_reflect", "bevy_ecs/bevy_reflect"]
-debug = ["bevy_app/bevy_debug_stepping", "bevy_ecs/debug"]
-file_watcher = ["bevy_asset/file_watcher"]
-multi_threaded = ["bevy_asset/multi_threaded", "bevy_ecs/multi_threaded"]
-trace = [
-    "bevy_app/trace",
-    "bevy_asset/trace",
-    "bevy_ecs/trace",
-    "bevy_log/trace",
-    "bevy_log/tracing-tracy",
-]
+reflect = ["bevy_app/bevy_reflect", "bevy_ecs/bevy_reflect"]
+text = ["dep:bevy_ui"]
+text_2d = ["dep:bevy_sprite"]
+text_span = ["dep:bevy_text"]
 
 [dependencies]
 bevy_app = { version = "0.19", default-features = false }
@@ -31,9 +23,9 @@ bevy_derive = { version = "0.19", default-features = false }
 bevy_ecs = { version = "0.19", default-features = false }
 bevy_fluent = { version = "0.15.0", default-features = false }
 bevy_log = { version = "0.19", default-features = false }
-bevy_sprite = { version = "0.19", default-features = false }
-bevy_text = { version = "0.19", default-features = false }
-bevy_ui = { version = "0.19", default-features = false }
+bevy_sprite = { version = "0.19", default-features = false, optional = true }
+bevy_text = { version = "0.19", default-features = false, optional = true }
+bevy_ui = { version = "0.19", default-features = false, optional = true }
 fluent = { version = "0.16", default-features = false }
 fluent_content = { version = "0.0.5", default-features = false }
 sys-locale = { version = "0.3", default-features = false }

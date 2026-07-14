@@ -14,20 +14,22 @@ use crate::{
     loading::LocalizationAssetLoadingPlugin,
     prelude::{DefaultLocale, LocaleChanged, SupportedLocales},
     resources::LocalizationFolderHandle,
-    text::{LocalizedText2dPlugin, LocalizedTextPlugin, LocalizedTextSpanPlugin},
 };
 
 pub struct LocalizationPlugin;
 
 impl Plugin for LocalizationPlugin {
     fn build(&self, app: &mut App) {
-        app.add_plugins((
-            LocalizationAssetLoadingPlugin,
-            FluentPlugin,
-            LocalizedTextPlugin,
-            LocalizedTextSpanPlugin,
-            LocalizedText2dPlugin,
-        ));
+        app.add_plugins((LocalizationAssetLoadingPlugin, FluentPlugin));
+
+        #[cfg(feature = "text")]
+        app.add_plugins(crate::localized_text::LocalizedTextPlugin);
+
+        #[cfg(feature = "text_2d")]
+        app.add_plugins(crate::localized_text_2d::LocalizedText2dPlugin);
+
+        #[cfg(feature = "text_span")]
+        app.add_plugins(crate::localized_text_span::LocalizedTextSpanPlugin);
 
         app.add_message::<LocaleChanged>();
 
