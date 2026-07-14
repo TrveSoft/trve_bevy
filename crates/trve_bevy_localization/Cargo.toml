@@ -1,6 +1,6 @@
 [package]
 name = "trve_bevy_localization"
-version = "0.2.1"
+version = "0.3.0"
 edition = "2024"
 description = "Provides Localization features, leveraging `bevy_fluent`."
 keywords.workspace = true
