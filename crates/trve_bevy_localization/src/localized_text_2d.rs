@@ -12,7 +12,6 @@ use bevy_ecs::{
     world::DeferredWorld,
 };
 use bevy_sprite::Text2d;
-use bevy_ui::widget::Text;
 
 use crate::prelude::{LocaleChanged, LocalizationManager};
 
@@ -49,7 +48,7 @@ impl LocalizedText2d {
 }
 
 fn update_localized_text_2d<F: QueryFilter>(
-    mut q: Query<(&mut Text, &LocalizedText2d), F>,
+    mut q: Query<(&mut Text2d, &LocalizedText2d), F>,
     localization_manager: LocalizationManager,
 ) {
     for (mut text, localized_text_2d) in &mut q {
@@ -59,7 +58,7 @@ fn update_localized_text_2d<F: QueryFilter>(
 
 fn on_insert_localized_text_2d(
     on: On<Insert, LocalizedText2d>,
-    mut q: Query<(&mut Text, &LocalizedText2d)>,
+    mut q: Query<(&mut Text2d, &LocalizedText2d)>,
     localization_manager: LocalizationManager,
 ) {
     if let Ok((mut text, localized_text_2d)) = q.get_mut(on.entity) {
