@@ -57,7 +57,7 @@ fn update_localized_text_spans<F: QueryFilter>(
 }
 
 fn on_insert_localized_text_span(
-    on: On<Insert, LocalizedTextSpan>,
+    on: On<Insert<LocalizedTextSpan>>,
     mut q: Query<(&mut TextSpan, &LocalizedTextSpan)>,
     localization_manager: LocalizationManager,
 ) {

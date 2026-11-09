@@ -57,7 +57,7 @@ fn update_localized_text_2d<F: QueryFilter>(
 }
 
 fn on_insert_localized_text_2d(
-    on: On<Insert, LocalizedText2d>,
+    on: On<Insert<LocalizedText2d>>,
     mut q: Query<(&mut Text2d, &LocalizedText2d)>,
     localization_manager: LocalizationManager,
 ) {

@@ -57,7 +57,7 @@ fn update_localized_text<F: QueryFilter>(
 }
 
 fn on_insert_localized_text(
-    on: On<Insert, LocalizedText>,
+    on: On<Insert<LocalizedText>>,
     mut q: Query<(&mut Text, &LocalizedText)>,
     localization_manager: LocalizationManager,
 ) {
