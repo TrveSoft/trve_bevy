@@ -34,4 +34,5 @@ While in development mode, the plugin will issue warnings if a wrong license typ
 
 | `bevy` Version | `trve_bevy_attribution` Version |
 | -------------- | ------------------------------- |
+| 0.20           | 0.3                             |
 | 0.19           | 0.1, 0.2                        |
