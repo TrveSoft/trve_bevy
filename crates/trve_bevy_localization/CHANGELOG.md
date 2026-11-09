@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_localization-v0.3.1...trve_bevy_localization-v0.4.0) - 2026-11-09
+
+### Added
+
+- _(dependencies)_ [**breaking**] Update bevy to 0.20
+
 ## [0.3.1](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_localization-v0.3.0...trve_bevy_localization-v0.3.1) - 2026-07-17
 
 ### Fixed
