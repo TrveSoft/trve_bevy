@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_time-v0.2.0...trve_bevy_time-v0.3.0) - 2026-11-09
+
+### Added
+
+- _(dependencies)_ [**breaking**] Update bevy to 0.20
+
 ## [0.2.0](https://github.com/TrveSoft/trve_bevy/compare/trve_bevy_time-v0.1.1...trve_bevy_time-v0.2.0) - 2026-07-14
 
 ### Added
